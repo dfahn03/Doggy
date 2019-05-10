@@ -12,7 +12,44 @@
 </head>
 
 <body>
-
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col d-flex">
+        <h1 class="text-primary">Dogs:</h1>
+        <div id="dog-buttons"></div>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-12 mr-0 pr-0">
+        <img src="/assets/sad-dog.jpg" alt="Dog Picture" id="dog-image" class="rounded mx-auto d-block">
+      </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 d-flex info1">
+            <h3 class="text-info">Name:
+              <span class="pl-3" id="name">Give Me a Name!</span>
+            </h3>
+          </div>
+          <div class="col-12 d-flex info1">
+            <h3 class="text-info">Mood:
+              <span class="pl-2" id="mood">Pet Me to Find Out!</span>
+            </h3>
+          </div>
+          <div class="col-12 d-flex info1">
+            <h3 class="text-info">Pets:
+              <span class="petting" id="pet">0</span>
+            </h3>
+          </div>
+        </div>
+        <div class="row" id="buttons2">
+          <button onclick="pet()" class="btn btn-success info2" id="pet-button">Pet Me!</button>
+          <button onclick="abandoned()" class="btn btn-warning info2 ml-3">Abandoned</button>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="/app.js"></script>
 </body>
